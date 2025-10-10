@@ -71,30 +71,30 @@ devops-health-checker/
 ### Installation & Setup
 
 1. **Clone the repository**
-```bash
+  ```bash
    git clone https://github.com/harika188/devops-health-checker.git
    cd devops-health-checker
 
-2. Install backend dependencies
-
-bash   cd src/backend
+2. **Install backend dependencies**
+  ```
+   cd src/backend
    npm install
 
-3. Start the backend server
-
-bash   npm start
+3. **Start the backend server**
+  ```
+ npm start
 Backend will run on http://localhost:3000
 
-4. Start the frontend (in a new terminal)
-
-bash   cd src/frontend
+4. **Start the frontend in new terminal**
+  ```
+cd src/frontend
    python3 -m http.server 8000
 Frontend will run on http://localhost:8000
 
-5. Open your browser
+5. **Open your browser**
 Navigate to http://localhost:8000 to see the dashboard!
 
-Example API Response
+### Example API Response
 GET /api/services
 json[
   {
@@ -107,7 +107,7 @@ json[
   }
 ]
 
-🎯 Learning Outcomes
+#### 🎯Learning Outcomes
 Through this project, I've gained hands-on experience with:
 
 1.Building RESTful APIs with Node.js/Express
@@ -116,7 +116,7 @@ Through this project, I've gained hands-on experience with:
 4.Project structure and organization
 5.API design and documentation
 
-Coming soon:
+### Coming soon:
 
 1.Docker containerization and orchestration
 2.Infrastructure as Code with Terraform
@@ -125,10 +125,10 @@ Coming soon:
 5.Monitoring and observability
 6.Security best practices in DevOps
 
-🤝 Contributing
+### 🤝 Contributing
 This is a personal learning project, but feedback and suggestions are welcome!
 
-👤 Author
+### 👤 Author
 Sai Harika Vempati
 🎓 MS in Information Technology @ Florida State University
 💼 Former Systems Engineer @ Infosys
