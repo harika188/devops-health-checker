@@ -43,24 +43,6 @@ This project demonstrates modern DevOps practices by implementing a complete CI/
 - **Monitoring**: Prometheus, Grafana
 - **Logging**: CloudWatch
 
-## 📂 Project Structure 
-
-devops-health-checker/
-├── src/
-│   ├── backend/          # Node.js Express API
-│   │   ├── server.js     # Main server file
-│   │   └── package.json  # Dependencies
-│   ├── frontend/         # Dashboard UI
-│   │   ├── index.html    # Main HTML
-│   │   ├── style.css     # Styles and animations
-│   │   └── app.js        # Frontend logic
-│   └── database/         # Database configs (coming soon)
-├── docker/               # Docker configurations (coming soon)
-├── terraform/            # Infrastructure as Code (coming soon)
-├── jenkins/              # CI/CD pipeline (coming soon)
-├── monitoring/           # Monitoring configs (coming soon)
-└── tests/                # Test suites (coming soon)
-
 ## 🚀 Getting Started
 
 ### Prerequisites
@@ -76,27 +58,29 @@ devops-health-checker/
    cd devops-health-checker
 
  2. **Install backend dependencies**
-  ```
-     cd src/backend
+  ```cd src/backend
      npm install
 
  3. **Start the backend server**
-  ```
-    npm start
-Backend will run on http://localhost:3000
+  ```npm start
+     Backend will run on http://localhost:3000
 
-  4. **Start the frontend in new terminal**
-  ```
-   cd src/frontend
-   python3 -m http.server 8000
-Frontend will run on http://localhost:8000
+4. **Start the frontend in new terminal**
+  ```cd src/frontend
+    python3 -m http.server 8000
+    Frontend will run on http://localhost:8000
 
-   5. **Open your browser**
-   Navigate to http://localhost:8000 to see the dashboard!
+5. **Open your browser**
+   ```Navigate to http://localhost:8000 to see the dashboard!
 
+
+**Replace with:** (add proper code block formatting)
+```markdown
 ### Example API Response
-GET /api/services
-json[
+
+**GET `/api/services`**
+```json
+[
   {
     "id": 1,
     "name": "Jenkins",
@@ -107,34 +91,37 @@ json[
   }
 ]
 
-#### 🎯Learning Outcomes
-Through this project, I've gained hands-on experience with:
+ ## 🎯 Learning Outcomes
 
-1.Building RESTful APIs with Node.js/Express
-2.Modern frontend development with vanilla JavaScript
-3.it version control and GitHub workflows
-4.Project structure and organization
-5.API design and documentation
+ Through this project, I've gained hands-on experience with:
 
-### Coming soon:
+- Building RESTful APIs with Node.js/Express
+- Modern frontend development with vanilla JavaScript
+- Git version control and GitHub workflows
+- Project structure and organization
+- API design and documentation
 
-1.Docker containerization and orchestration
-2.Infrastructure as Code with Terraform
-3.CI/CD pipeline implementation with Jenkins
-4.Cloud deployment on AWS
-5.Monitoring and observability
-6.Security best practices in DevOps
+**Coming soon:**
+
+- Docker containerization and orchestration
+- Infrastructure as Code with Terraform
+- CI/CD pipeline implementation with Jenkins
+- Cloud deployment on AWS
+- Monitoring and observability
+- Security best practices in DevOps
 
 ### 🤝 Contributing
 This is a personal learning project, but feedback and suggestions are welcome!
 
-### 👤 Author
-Sai Harika Vempati
-🎓 MS in Information Technology @ Florida State University
-💼 Former Systems Engineer @ Infosys
-📧 Email: saiharikachowdary00@gmail.com
-💼 LinkedIn
-🌐 GitHub: harika188
+## 👤 Author
+
+**Sai Harika Vempati**
+
+- 🎓 MS in Information Technology @ Florida State University
+- 💼 Former Systems Engineer @ Infosys
+- 📧 Email: saiharikachowdary00@gmail.com
+- 💼 LinkedIn: [linkedin.com/in/saiharikavempati](www.linkedin.com/in/sai-harika-vempati-5a3748193)
+- 🌐 GitHub: [@harika188](https://github.com/harika188)
 
 📄 License
 This project is licensed under the MIT License.
