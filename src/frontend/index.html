@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevOps Health Checker - Real-time Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🚀 DevOps Health Checker</h1>
+            <p class="subtitle">Real-time monitoring of your DevOps infrastructure</p>
+            <div class="last-updated">
+                <span class="pulse"></span>
+                Last updated: <span id="lastUpdated">Loading...</span>
+            </div>
+        </header>
+
+        <div class="metrics-grid">
+            <div class="metric-card">
+                <div class="metric-icon">📦</div>
+                <h3>Total Services</h3>
+                <p class="metric-value" id="totalServices">-</p>
+                <p class="metric-label">Monitored</p>
+            </div>
+            <div class="metric-card success">
+                <div class="metric-icon">✅</div>
+                <h3>Healthy Services</h3>
+                <p class="metric-value" id="healthyServices">-</p>
+                <p class="metric-label">Running Smooth</p>
+            </div>
+            <div class="metric-card warning">
+                <div class="metric-icon">⚠️</div>
+                <h3>Issues</h3>
+                <p class="metric-value" id="unhealthyServices">-</p>
+                <p class="metric-label">Need Attention</p>
+            </div>
+            <div class="metric-card info">
+                <div class="metric-icon">📊</div>
+                <h3>Average Uptime</h3>
+                <p class="metric-value" id="avgUptime">-</p>
+                <p class="metric-label">System Health</p>
+            </div>
+        </div>
+
+        <div class="services-section">
+            <div class="section-header">
+                <h2>🔧 Services Status</h2>
+                <div class="status-legend">
+                    <span class="legend-item"><span class="dot green"></span> Healthy</span>
+                    <span class="legend-item"><span class="dot yellow"></span> Warning</span>
+                    <span class="legend-item"><span class="dot red"></span> Down</span>
+                </div>
+            </div>
+            <div id="servicesList" class="services-list">
+                <div class="loading">
+                    <div class="loader"></div>
+                    <p>Loading services...</p>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <p>🎓 Built by <strong>Sai Harika Vempati</strong></p>
+            <p>MS Information Technology @ Florida State University</p>
+            <p class="tech-stack">Node.js • Express • Docker • Jenkins • AWS • Terraform</p>
+        </footer>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
