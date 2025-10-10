@@ -75,24 +75,24 @@ devops-health-checker/
    git clone https://github.com/harika188/devops-health-checker.git
    cd devops-health-checker
 
-2. **Install backend dependencies**
+ 2. **Install backend dependencies**
   ```
-   cd src/backend
-   npm install
+     cd src/backend
+     npm install
 
-3. **Start the backend server**
+ 3. **Start the backend server**
   ```
- npm start
+    npm start
 Backend will run on http://localhost:3000
 
-4. **Start the frontend in new terminal**
+  4. **Start the frontend in new terminal**
   ```
-cd src/frontend
+   cd src/frontend
    python3 -m http.server 8000
 Frontend will run on http://localhost:8000
 
-5. **Open your browser**
-Navigate to http://localhost:8000 to see the dashboard!
+   5. **Open your browser**
+   Navigate to http://localhost:8000 to see the dashboard!
 
 ### Example API Response
 GET /api/services
