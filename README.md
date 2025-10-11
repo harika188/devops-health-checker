@@ -56,26 +56,29 @@ This project demonstrates modern DevOps practices by implementing a complete CI/
   ```bash
    git clone https://github.com/harika188/devops-health-checker.git
    cd devops-health-checker
+```
 
  2. **Install backend dependencies**
   ```cd src/backend
      npm install
+```
 
  3. **Start the backend server**
   ```npm start
      Backend will run on http://localhost:3000
-
+```
 4. **Start the frontend in new terminal**
   ```cd src/frontend
     python3 -m http.server 8000
     Frontend will run on http://localhost:8000
-
+```
 5. **Open your browser**
-   ```Navigate to http://localhost:8000 to see the dashboard!
+
+   Navigate to ```http://localhost:8000``` to see the dashboard!
 
 
 **Replace with:** (add proper code block formatting)
-```markdown
+```markdown```
 ### Example API Response
 
 **GET `/api/services`**
@@ -90,6 +93,7 @@ This project demonstrates modern DevOps practices by implementing a complete CI/
     "lastCheck": "2024-10-11T14:30:00.000Z"
   }
 ]
+```
 
  ## 🎯 Learning Outcomes
 
