@@ -1,4 +1,7 @@
-const API_URL = 'http://localhost:3000';
+// Use environment variable or default to localhost
+   const API_URL = window.location.hostname === 'localhost' 
+       ? 'http://localhost:3000'
+       : `http://${window.location.hostname}:3000`;
 
 // Service icons mapping
 const serviceIcons = {

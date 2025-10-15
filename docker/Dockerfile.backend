@@ -1,0 +1,20 @@
+# Start with official Node.js image (like starting with a blank computer with Node installed)
+FROM node:18-alpine
+
+# Set working directory inside container
+WORKDIR /app
+
+# Copy package.json first (for better caching)
+COPY src/backend/package*.json ./
+
+# Install dependencies
+RUN npm install
+
+# Copy the rest of the backend code
+COPY src/backend/ ./
+
+# Expose port 3000 (tell Docker our app uses this port)
+EXPOSE 3000
+
+# Command to run when container starts
+CMD ["npm", "start"]
